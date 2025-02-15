@@ -10,7 +10,7 @@ export async function generateMetadata() {
 const page = () => {
     return (
         <>
-            <div className="max-w-3xl mx-auto prose lg:prose-xl py-10 px-5 ">
+            <div className="max-w-3xl mx-auto prose lg:prose-xl pt-10 px-5 ">
                 <h1 className="text-4xl font-bold text-center mb-6">Privacy Policy</h1>
                 <p className="text-center">
                     <strong>Effective Date:</strong> 25-02-2025 (dd-mm-yyyy)
