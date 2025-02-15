@@ -67,9 +67,6 @@ const page = () => {
                     <li>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:contact.ducnv@gmail.com" className="text-blue-600 underline">contact.ducnv@gmail.com</a>.</li>
                 </ul>
             </div>
-            <footer className="text-center py-5 mt-10 text-gray-500">
-                <p>© 2024 PicTrim. All Rights Reserved.</p>
-            </footer>
         </>
     );
 };
