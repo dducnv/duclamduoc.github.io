@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
+import { Navbar, Footer } from "@/components";
 
 // Import font IBM Plex Mono
 const ibmPlexMono = IBM_Plex_Mono({
@@ -108,7 +109,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ibmPlexMono.variable} ${ibmPlexSans.variable} font-sans antialiased`}>
+      <Navbar />
         {children}
+      <Footer />
       </body>
     </html>
   );

@@ -1,10 +1,9 @@
-import { Navbar, Footer } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+ 
       <div className="m-auto max-w-3xl p-4 md:p-6">
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-5 font-sans">
           {/* Avatar */}
@@ -37,7 +36,6 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
