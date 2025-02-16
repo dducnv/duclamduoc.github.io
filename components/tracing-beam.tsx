@@ -31,16 +31,16 @@ export const TracingBeam = ({
   }, []);
 
   const y1 = useSpring(
-    useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
+    useTransform(scrollYProgress, [0, 0.8], [50, svgHeight + 700]),
     {
-      stiffness: 500,
+      stiffness: 400,
       damping: 90,
     }
   );
   const y2 = useSpring(
-    useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]),
+    useTransform(scrollYProgress, [0, 1], [50, svgHeight]),
     {
-      stiffness: 500,
+      stiffness: 400,
       damping: 90,
     }
   );
@@ -121,7 +121,7 @@ export const TracingBeam = ({
           </defs>
         </svg>
       </div>
-      <div ref={contentRef}>{children}</div>
+      <div className="md:pl-5" ref={contentRef}>{children}</div>
     </motion.div>
   );
 };
