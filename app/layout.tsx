@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
-import { Navbar, Footer } from "@/components";
+import { Navbar, Footer, AnimateScript } from "@/components";
 
 // Import font IBM Plex Mono
 const ibmPlexMono = IBM_Plex_Mono({
@@ -100,18 +100,19 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${ibmPlexMono.variable} ${ibmPlexSans.variable} font-sans antialiased`}>
-      <Navbar />
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${ibmPlexMono.variable} ${ibmPlexSans.variable} font-sans antialiased relative`}>
+        <Navbar />
+        <AnimateScript/>
         {children}
-      <Footer />
+        <Footer />
+      
       </body>
     </html>
   );

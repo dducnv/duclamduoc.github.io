@@ -19,8 +19,8 @@ export const Navbar = () => {
             work
           </Link>
           <span>/</span>
-          <Link href="/projects" className="hover:underline focus:outline-none focus:ring-2 focus:ring-gray-400">
-            projects
+          <Link href="/gallery" className="hover:underline focus:outline-none focus:ring-2 focus:ring-gray-400">
+            gallery
           </Link>
         </nav>
       </div>
