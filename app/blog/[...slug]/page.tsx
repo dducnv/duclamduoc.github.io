@@ -63,7 +63,23 @@ const blogPost: BlogPostDetail = {
     ]
 };
 
-export default function BlogPostDetail() {
+export async function generateStaticParams() {
+    // Return an array of possible slug values
+    return [
+        {
+            slug: ['nature-photography-2025']
+        }
+    ];
+}
+
+interface BlogPostParams {
+    params: {
+        slug: string[];
+    };
+}
+
+export default function BlogPostDetail({ params }: BlogPostParams) {
+    console.log(params)
     return (
         <div className="min-h-screen bg-white">
             <TracingBeam>
