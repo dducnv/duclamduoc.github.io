@@ -23,7 +23,7 @@ export default function Home() {
         </div>
 
         {/* Giới thiệu */}
-        <div className="mt-6 text-gray-800 font-sans font-sans">
+        <div className="mt-6 text-gray-800 font-sans">
           <p className="text-base md:text-lg animate">
             Xin chào! Tôi là Đức, một lập trình viên trẻ đam mê công nghệ. Hiện tại, tôi là nhà phát triển ứng dụng sử dụng Flutter và không ngừng học hỏi để nâng cao kỹ năng. Tôi đã tốt nghiệp FPT Aptech và đang tiếp tục theo học tại PTIT.
           </p>
