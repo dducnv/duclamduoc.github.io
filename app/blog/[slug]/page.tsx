@@ -66,7 +66,13 @@ const blogPost: BlogPostDetail = {
 export async function generateStaticParams() {
 }
  
-export default async function Page() {
+export default async function Page({
+    params,
+  }: {
+    params: Promise<{ slug: string }>
+  }) {
+    const slug = (await params).slug
+    console.log(slug);
     return (
         <div className="min-h-screen bg-white">
             <TracingBeam>
