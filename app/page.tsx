@@ -17,13 +17,13 @@ export default function Home() {
           </div>
           {/* Thông tin */}
           <div className="text-center md:text-left">
-            <h1 className="text-xl md:text-3xl font-bold">Nguyễn Văn Đức</h1>
-            <p className="text-sm md:text-lg text-gray-600">Mobile App Developer</p>
+            <h1 className="text-xl md:text-3xl font-bold font-mono">Nguyễn Văn Đức</h1>
+            <p className="text-sm md:text-lg text-gray-600 font-mono">Mobile App Developer</p>
           </div>
         </div>
 
         {/* Giới thiệu */}
-        <div className="mt-6 text-gray-800 font-sans">
+        <div className="mt-6 text-gray-800 font-sans font-sans">
           <p className="text-base md:text-lg animate">
             Xin chào! Tôi là Đức, một lập trình viên trẻ đam mê công nghệ. Hiện tại, tôi là nhà phát triển ứng dụng sử dụng Flutter và không ngừng học hỏi để nâng cao kỹ năng. Tôi đã tốt nghiệp FPT Aptech và đang tiếp tục theo học tại PTIT.
           </p>
