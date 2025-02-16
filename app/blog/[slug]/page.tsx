@@ -64,7 +64,8 @@ const blogPost: BlogPostDetail = {
 };
 
 export async function generateStaticParams() {
-}
+    return [{ slug: "flutter-state-management" }, { slug: "nextjs-ssr-vs-ssg" }, {slug:"typescript-tips"}]; // Trả về mảng các object
+  }
  
 export default async function Page({
     params,
