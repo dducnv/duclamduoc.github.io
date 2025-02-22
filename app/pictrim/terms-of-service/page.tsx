@@ -13,7 +13,7 @@ const page = () => {
             <div className="max-w-3xl mx-auto prose lg:prose-xl pt-10 px-5 ">
                 <h1 className="text-4xl font-bold text-center mb-6">Terms of Service</h1>
                 <p className="text-center">
-                    <strong>Effective Date:</strong> 25-02-2025 (dd-mm-yyyy)
+                    <strong>Effective Date:</strong> 22-02-2025 (dd-mm-yyyy)
                 </p>
                 <p className="mt-4">
                     Welcome to <strong>PicTrim</strong>. By using our application, you agree to the following terms and conditions.
