@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export async function generateMetadata() {
     return {
@@ -34,7 +35,15 @@ const page = () => {
                 
                 <h2 className="font-bold">3. Third-Party Services</h2>
                 <ul className="list-disc pl-10">
-                    <li>We may use third-party services such as Google Ads, Unity Ads, and Unity Mediation, which may collect data such as device identifiers for ad personalization and app performance analysis.</li>
+                    <li>We may use third-party services such as:</li>
+                    <ul className="list-disc pl-14">
+                        <li><Link href="https://policies.google.com/privacy" className="text-blue-600 underline">Google Ads</Link></li>
+                        <li><Link href="https://unity.com/legal/privacy-policy" className="text-blue-600 underline">Unity Ads</Link></li>
+                        <li><Link href="https://unity.com/legal/privacy-policy" className="text-blue-600 underline">Unity Mediation</Link></li>
+                        <li><Link href="https://www.applovin.com/privacy" className="text-blue-600 underline">AppLovin</Link></li>
+                        <li><Link href="https://developers.is.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/" className="text-blue-600 underline">IronSource</Link></li>
+                    </ul>
+                    <li>These services may collect data such as device identifiers for ad personalization and app performance analysis.</li>
                 </ul>
                 
                 <h2 className="font-bold">4. Data Storage</h2>
@@ -52,7 +61,7 @@ const page = () => {
                     <li>You have the right to request the deletion of any collected data by third-party services. Please refer to their privacy policies for more details.</li>
                 </ul>
                 
-                <h2 className="font-bold">7. Children&apos;s Privacy</h2>
+                <h2 className="font-bold">7. Children&lsquo;s Privacy</h2>
                 <ul className="list-disc pl-10">
                     <li>Our application is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13.</li>
                 </ul>
@@ -64,7 +73,7 @@ const page = () => {
                 
                 <h2 className="font-bold">9. Contact Us</h2>
                 <ul className="list-disc pl-10">
-                    <li>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:contact.ducnv@gmail.com" className="text-blue-600 underline">contact.ducnv@gmail.com</a>.</li>
+                    <li>If you have any questions about this Privacy Policy, please contact us at <Link href="mailto:contact.ducnv@gmail.com" className="text-blue-600 underline">contact.ducnv@gmail.com</Link>.</li>
                 </ul>
             </div>
         </>
