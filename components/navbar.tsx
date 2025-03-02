@@ -10,7 +10,7 @@ export const Navbar = () => {
         </Link>
 
         {/* Navigation */}
-        <nav className="flex flex-wrap gap-3 text-lg font-sans">
+        {/* <nav className="flex flex-wrap gap-3 text-lg font-sans">
           <Link href="/blog" className="hover:underline focus:outline-none focus:ring-2 focus:ring-gray-400">
             blog
           </Link>
@@ -22,7 +22,7 @@ export const Navbar = () => {
           <Link href="/gallery" className="hover:underline focus:outline-none focus:ring-2 focus:ring-gray-400">
             gallery
           </Link>
-        </nav>
+        </nav> */}
       </div>
     </header>
   );
